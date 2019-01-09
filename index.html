@@ -69,6 +69,28 @@ body, html {
 <div id="Contact" class="tabcontent">
   <h3>Contact</h3>
   <p>Get in touch, or swing by for a cup of coffee.</p>
+  <html>
+<body>
+
+<h3>A demonstration of how to access an IFRAME element</h3>
+
+<iframe id="myFrame" src="/default.asp"></iframe>
+
+<p>Click the button to get the URL of the iframe.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myFrame").src;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
 </div>
 
 <div id="About" class="tabcontent">
